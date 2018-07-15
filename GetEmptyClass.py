@@ -119,8 +119,8 @@ class sxufreesite:
 
 
 	# def get_score(self):
-	# 	username = "201701003091"
-	# 	password = "326824"
+	# 	username = "yourusername"
+	# 	password = "yourpassword"
 		# cookies = {}
 		# for item in self.cookies:
 		# 	cookies["name"] = item.name
@@ -340,7 +340,7 @@ code = input("code:")
 #self.client.basicGeneral(self.get_file_content("imgCode.jpg"))["words_result"][0]["words"]
 # code = code.replace(" ","")
 print(code)
-opener = sfs.get_score(sfs.opener,"201701003091","326824",code)
+opener = sfs.get_score(sfs.opener,"你的学号","你的密码",code)
 print(sfs.cookie)
 sfs.post_score(sfs.opener)
 
