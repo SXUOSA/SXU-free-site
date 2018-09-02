@@ -105,7 +105,7 @@ def get_class(username,password,year,term,flag,path):
 
 
 
-    r = s.get("http://bkjw.sxu.edu.cn/xscj/Stu_MyScore_Drawimg.aspx?x=1&h=2&w=782&xnxq="+str(year)+str(term)+"&xn="+str(year)+"&xq="+str(term)+"&rpt=1&rad=2&zfx="+str(flag)+"&param_xh=201700004159",headers=header)
+    r = s.get("http://bkjw.sxu.edu.cn/xscj/Stu_MyScore_Drawimg.aspx?x=1&h=2&w=782&xnxq="+str(year)+str(term)+"&xn="+str(year)+"&xq="+str(term)+"&rpt=1&rad=2&zfx="+str(flag),headers=header)
 
     with open(path,"wb") as jpg:
         jpg.write(r.content)
